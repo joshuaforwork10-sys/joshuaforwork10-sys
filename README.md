@@ -37,6 +37,11 @@
   <img alt="Signal-to-rep hub, inbound routing, outbound engines, custom TAM, rep app and attribution engine." src="assets/work-light.svg" width="100%">
 </picture>
 
+<p align="center"><b>Run them yourself:</b> open-source versions with sample data and tests.<br>
+<a href="https://github.com/joshuaforwork10-sys/signal-scoring-engine"><code>signal-scoring-engine</code></a> ·
+<a href="https://github.com/joshuaforwork10-sys/inbound-lead-router"><code>inbound-lead-router</code></a> ·
+<a href="https://github.com/joshuaforwork10-sys/svg-profile-kit"><code>svg-profile-kit</code></a></p>
+
 ## ▍ How it fits together
 
 Each tool does one job. A hub in the middle decides what happens next and tells the person who owns it.
