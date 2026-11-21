@@ -1,7 +1,4 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-  <img alt="Josh Robison, GTM Architect and Senior AE. Signals from the CRM, outbound, product and web are scored nightly and become a rep brief by morning." src="assets/hero-light.svg" width="100%">
-</picture>
+<p align="center"><img alt="Animated intro: signals from CRM, outbound, product and web are scored every night and become a rep brief by morning; results 24 hours to 1 minute, 56 to 5 workflows, 4 tools to 1 brief, 120% of quota. Josh Robison, GTM Architect and Senior AE." src="assets/intro.gif" width="100%"></p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/jrobison22"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-2457E6?style=for-the-badge&logo=linkedin&logoColor=white"></a>
