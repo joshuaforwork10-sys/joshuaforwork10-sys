@@ -130,9 +130,9 @@ def hero():
     b.append(T(920, hy + 59, "and why", 11.5, "mut", 400, "middle"))
     for i, d in enumerate(paths):
         for k in range(2):
-            b.append(f'<circle r="4" class="dot mover"><animateMotion dur="2.6s" begin="{i*0.45 + k*1.3:.2f}s" '
+            b.append(f'<circle r="4" class="dot mover"><animateMotion dur="2.6s" begin="-{i*0.45 + k*1.3 + 0.01:.2f}s" '
                      f'repeatCount="indefinite" path="{d}"/></circle>')
-    b.append(f'<circle r="4.5" fill="var(--gr)" class="mover"><animateMotion dur="1.3s" begin="0.4s" '
+    b.append(f'<circle r="4.5" fill="var(--gr)" class="mover"><animateMotion dur="1.3s" begin="-0.4s" '
              f'repeatCount="indefinite" path="{out_d}"/></circle>')
     b.append(T(560, 296, "SIGNALS IN", 10, "mono q", 500, extra='letter-spacing="1.4"'))
     b.append(T(hx, 296, "DECIDE", 10, "mono q", 500, "middle", extra='letter-spacing="1.4"'))
@@ -292,8 +292,8 @@ def hub():
     b.append(T(cx, cy + 9, "Decides and tells", 16, "on", 650, "middle"))
     b.append(T(cx, cy + 28, "one job per system", 11.5, "on", 400, "middle", 'opacity=".85"'))
     for i, (d, dr) in enumerate(paths):
-        b.append(f'<circle r="4" class="dot mover"><animateMotion dur="2.4s" begin="{i*.4:.1f}s" repeatCount="indefinite" path="{d}"/></circle>')
-        b.append(f'<circle r="4" fill="var(--gr)" class="mover"><animateMotion dur="2.4s" begin="{i*.4+1.2:.1f}s" repeatCount="indefinite" path="{dr}"/></circle>')
+        b.append(f'<circle r="4" class="dot mover"><animateMotion dur="2.4s" begin="-{i*.4 + .05:.2f}s" repeatCount="indefinite" path="{d}"/></circle>')
+        b.append(f'<circle r="4" fill="var(--gr)" class="mover"><animateMotion dur="2.4s" begin="-{i*.4+1.2:.2f}s" repeatCount="indefinite" path="{dr}"/></circle>')
     write("hub.svg", svg(W, H, "".join(b), "", "One job per system: CRM, outbound, email, analytics, warehouse and the team around a hub that decides and tells."))
 
 
@@ -513,7 +513,7 @@ def cta():
     b.append('</g>')
     b.append(f'<text x="48" y="86" font-size="34" font-weight="650" letter-spacing="-1" style="fill:#fff">Need a revenue system that runs itself?</text>')
     b.append(f'<text x="48" y="122" font-size="16" style="fill:#fff;fill-opacity:.85">I scope it, test it on live data, and ship it without breaking what works.</text>')
-    b.append(f'<text x="48" y="160" font-size="12" font-family="{MONO}" letter-spacing="1.6" style="fill:#fff;fill-opacity:.75">LINKEDIN · EMAIL · BELOW</text>')
+    b.append(f'<text x="48" y="160" font-size="12" font-family="{MONO}" letter-spacing="1.6" style="fill:#fff;fill-opacity:.75">CONNECT ON LINKEDIN · FULL PORTFOLIO ON REQUEST</text>')
     write("cta.svg", svg(W, H, "".join(b), "", "Need a revenue system that runs itself? Contact links below."))
 
 
